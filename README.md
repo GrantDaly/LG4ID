@@ -28,3 +28,21 @@ and “CCC”s separately and obtains the maximum value among those, which is ca
 pessimistic measure. If "maximum Hits" exceeds "mustExceed“ (‘120’) then the bin is a valid
 LG4, otherwise it is not. All valid LG4 bins which overlap or neighbor by start and stop
 coordinates are joined into contiguous LG4s, which are returned to the user.
+
+# Requirements
+
+Python 3 with Numpy library.
+
+# Example Command Line Usage
+## Default Parameters
+
+Window Size 1500, Minimum Hits (mustExceed) 120
+
+`python3 lg4id.py --infile input.fasta --outfile out.csv`
+
+## User-Defined Parameters
+
+Window Size 500, Minimum Hits (mustExceed) 40
+
+`python3 lg4id.py --infile input.fasta --outfile out.csv --window 500 --min 40`
+
